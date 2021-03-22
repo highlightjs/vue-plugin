@@ -7,6 +7,7 @@ export default {
     file: 'dist/highlightjs-vue.min.js',
     format: 'iife',
     name: "hljsVuePlugin",
+    interop: "default",
     globals: {
       'highlight.js/lib/core.js': 'hljs'
     }
