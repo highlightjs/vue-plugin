@@ -23,7 +23,7 @@ in your templates:
 Then simply register the plugin with Vue:
 
 ```js
-Vue.use(hljsVuePlugin());
+Vue.use(hljsVuePlugin);
 ```
 
 
@@ -36,7 +36,7 @@ import vuePlugin from "@highlightjs/vue-plugin";
 
 hljs.registerLanguage('javascript', javascript);
 
-Vue.use(vuePlugin());
+Vue.use(vuePlugin);
 ```
 
 Note: This plugin imports `lib/core` internally (but no languages).  Thanks to the magic of ES6 modules you can import Highlight.js anywhere you need in order to register languages or configure the library.  Or can also simply use the "common" languages (as of v11):
@@ -44,5 +44,5 @@ Note: This plugin imports `lib/core` internally (but no languages).  Thanks to t
 ```js
 import hljs from 'highlight.js/lib/common';
 import vuePlugin from "@highlightjs/vue-plugin";
-Vue.use(vuePlugin());
+Vue.use(vuePlugin);
 ```
