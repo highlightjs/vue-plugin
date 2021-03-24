@@ -5,7 +5,8 @@
   "main": "src/vue.js",
   "scripts": {
     "build": "rollup -c",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "npm publish --access public"
   },
   "type": "module",
   "author": "Josh Goebel <hello@joshgoebel.com>",
