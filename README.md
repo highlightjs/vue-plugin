@@ -1,7 +1,14 @@
 # Highlight.js plugin for Vue.js
 
+[![latest version](https://badgen.net/npm/v/@highlightjs/vue-plugin?label=latest)](https://www.npmjs.com/package/@highlightjs/vue-plugin)
+[![license](https://badgen.net/github/license/highlightjs/vue-plugin?color=cyan)](https://github.com/highlightjs/vue-plugin/blob/main/LICENSE)
+[![publish size](https://badgen.net/packagephobia/publish/@highlightjs/vue-plugin?label=size)](https://packagephobia.com/result?p=@highlightjs/vue-plugin)
+[![gzipped size](https://badgen.net/bundlephobia/minzip/@highlightjs/vue-plugin?label=gzipped)](https://bundlephobia.com/result?p=@highlightjs/vue-plugin)
+[![slack](https://badgen.net/badge/icon/slack?icon=slack&label&color=pink)](https://join.slack.com/t/highlightjs/shared_invite/zt-mj0utgqp-TNFf4VQICnDnPg4zMHChFw)
+
+
 This plugin provides a `highlightjs` component for use
-in your templates:
+in your Vue.js applications:
 
 ```html
   <div id="app">
@@ -47,4 +54,12 @@ You can also simply load all "common" languages at once (as of v11):
 import hljs from 'highlight.js/lib/common';
 import vuePlugin from "@highlightjs/vue-plugin";
 Vue.use(vuePlugin);
+```
+
+## Building the pre-built library from source
+
+We use rollup to build the `dist` distributable.
+
+```
+npm run build
 ```

@@ -2,7 +2,8 @@ import { terser } from "rollup-plugin-terser";
 
 export default {
   input: 'src/vue.js',
-  // plugins: [terser()],
+  plugins: [terser()],
+  external: [ "highlight.js/lib/core.js"],
   output: {
     file: 'dist/highlightjs-vue.min.js',
     format: 'iife',
