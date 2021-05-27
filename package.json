@@ -1,6 +1,6 @@
 {
   "name": "@highlightjs/vue-plugin",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "description": "Highlight.js Vue Plugin",
   "main": "src/vue.js",
   "scripts": {
@@ -16,6 +16,9 @@
     "rollup-plugin-terser": "^7.0.2"
   },
   "dependencies": {
-    "highlight.js": "^10.7.1"
-  }
+    "highlight.js": "^10.7.2"
+  },
+  "files": [
+    "dist"
+  ]
 }

@@ -1,4 +1,4 @@
-# Highlight.js plugin for Vue.js
+# Highlight.js plugin for Vue.js v2
 
 [![latest version](https://badgen.net/npm/v/@highlightjs/vue-plugin?label=latest)](https://www.npmjs.com/package/@highlightjs/vue-plugin)
 [![license](https://badgen.net/github/license/highlightjs/vue-plugin?color=cyan)](https://github.com/highlightjs/vue-plugin/blob/main/LICENSE)
@@ -46,7 +46,7 @@ hljs.registerLanguage('javascript', javascript);
 Vue.use(vuePlugin);
 ```
 
-Note: The plugin imports `highlight.js/lib/core` internally (but no languages).  Thanks to the magic of ES6 modules you can import Highlight.js anywhere to register languages or configure the library.  Any import of Highlight.js refers to the same singleton instance of the library, so configuring the library anywhere configures it everywhere. 
+Note: The plugin imports `highlight.js/lib/core` internally (but no languages).  Thanks to the magic of ES6 modules you can import Highlight.js anywhere to register languages or configure the library.  Any import of Highlight.js refers to the same singleton instance of the library, so configuring the library anywhere configures it everywhere.
 
 You can also simply load all "common" languages at once (as of v11):
 
