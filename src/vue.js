@@ -32,7 +32,7 @@ const Component = {
         result = hljs.highlightAuto(this.code);
         this.detectedLanguage = result.language;
       } else {
-        result = hljs.highlight(this.language, this.code, this.ignoreIllegals);
+        result = hljs.highlight(this.code, { language: this.language, ignoreIllegals: this.ignoreIllegals });
         this.detectedLanguage = this.language;
       }
       return result.value;
