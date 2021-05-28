@@ -1,6 +1,6 @@
 {
   "name": "@highlightjs/vue-plugin",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Highlight.js Vue Plugin",
   "main": "dist/highlightjs-vue.min.js",
   "module": "dist/highlightjs-vue.esm.min.js",
@@ -8,7 +8,7 @@
   "scripts": {
     "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "publish": "npm publish --access public"
+    "publish": "npm publish --access public --tag next"
   },
   "type": "module",
   "author": "Josh Goebel <hello@joshgoebel.com>",

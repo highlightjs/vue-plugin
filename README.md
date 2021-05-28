@@ -1,7 +1,11 @@
-# Highlight.js plugin for Vue.js v2
+# Highlight.js plugin for Vue.js
 
-[![latest version](https://badgen.net/npm/v/@highlightjs/vue-plugin?label=latest)](https://www.npmjs.com/package/@highlightjs/vue-plugin)
+[![latest version](https://badgen.net/npm/v/@highlightjs/vue-plugin/latest?label=latest)](https://www.npmjs.com/package/@highlightjs/vue-plugin)
+[![latest version](https://badgen.net/npm/v/@highlightjs/vue-plugin/next?label=next)](https://www.npmjs.com/package/@highlightjs/vue-plugin)
+![vue 3](https://badgen.net/badge/vue/3/green)
+![vue 2](https://badgen.net/badge/vue/2/green)
 [![license](https://badgen.net/github/license/highlightjs/vue-plugin?color=cyan)](https://github.com/highlightjs/vue-plugin/blob/main/LICENSE)
+
 [![publish size](https://badgen.net/packagephobia/publish/@highlightjs/vue-plugin?label=size)](https://packagephobia.com/result?p=@highlightjs/vue-plugin)
 [![gzipped size](https://badgen.net/bundlephobia/minzip/@highlightjs/vue-plugin?label=gzipped)](https://bundlephobia.com/result?p=@highlightjs/vue-plugin)
 [![slack](https://badgen.net/badge/icon/slack?icon=slack&label&color=pink)](https://join.slack.com/t/highlightjs/shared_invite/zt-mj0utgqp-TNFf4VQICnDnPg4zMHChFw)
@@ -17,6 +21,8 @@ This plugin provides a `highlightjs` component for use in your Vue.js 3 applicat
     <highlightjs language='javascript' code="var x = 5;" />
 </div>
 ```
+
+Note: For Vue.js version 2 support see the [1-stable](https://github.com/highlightjs/vue-plugin/tree/1-stable) branch here on GitHub.  The `latest` tag via NPM is compatible with Vue.js v2; the `next` tag Vue.js v3.
 
 ## Using the pre-built libraries
 

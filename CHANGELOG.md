@@ -1,3 +1,8 @@
+## 2.0.0
+
+- Vue 3.x support
+- TypeScript
+
 ## 1.0.1
 
 - Publishing 1.0 was weird, just wanting to make sure the correct code was on NPM.
