@@ -1,6 +1,6 @@
 {
   "name": "@highlightjs/vue-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Highlight.js Vue Plugin",
   "main": "src/vue.js",
   "scripts": {
@@ -19,6 +19,7 @@
     "highlight.js": "^10.7.2"
   },
   "files": [
-    "dist"
+    "dist",
+    "src"
   ]
 }
