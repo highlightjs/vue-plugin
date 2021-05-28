@@ -2,7 +2,9 @@
   "name": "@highlightjs/vue-plugin",
   "version": "1.0.1",
   "description": "Highlight.js Vue Plugin",
-  "main": "src/vue.js",
+  "main": "dist/highlightjs-vue.min.js",
+  "module": "dist/highlightjs-vue.esm.min.js",
+  "types": "dist/highlightjs-vue.d.ts",
   "scripts": {
     "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,12 +15,17 @@
   "license": "BSD-3-Clause",
   "devDependencies": {
     "rollup": "^2.42.3",
-    "rollup-plugin-terser": "^7.0.2"
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "tslib": "^2.2.0",
+    "typescript": "^4.2.4"
   },
   "dependencies": {
-    "highlight.js": "^10.7.2"
+    "highlight.js": "^10.7.2",
+    "vue": "^3"
   },
   "files": [
-    "dist"
+    "dist",
+    "src"
   ]
 }
