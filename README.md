@@ -7,16 +7,15 @@
 [![slack](https://badgen.net/badge/icon/slack?icon=slack&label&color=pink)](https://join.slack.com/t/highlightjs/shared_invite/zt-mj0utgqp-TNFf4VQICnDnPg4zMHChFw)
 
 
-This plugin provides a `highlightjs` component for use
-in your Vue.js applications:
+This plugin provides a `highlightjs` component for use in your Vue.js 3 applications:
 
 ```html
-  <div id="app">
+<div id="app">
     <!-- bind to a data property named `code` -->
     <highlightjs autodetect :code="code" />
     <!-- or literal code works as well -->
     <highlightjs language='javascript' code="var x = 5;" />
-  </div>
+</div>
 ```
 
 ## Using the pre-built libraries
@@ -30,7 +29,8 @@ in your Vue.js applications:
 Then simply register the plugin with Vue:
 
 ```js
-Vue.use(hljsVuePlugin);
+const app = createApp(App)
+app.use(hljsVuePlugin)
 ```
 
 
@@ -39,11 +39,13 @@ Vue.use(hljsVuePlugin);
 ```js
 import hljs from 'highlight.js/lib/core';
 import javascript from 'highlight.js/lib/languages/javascript';
-import vuePlugin from "@highlightjs/vue-plugin";
+import hljsVuePlugin from "@highlightjs/vue-plugin";
 
 hljs.registerLanguage('javascript', javascript);
 
-Vue.use(vuePlugin);
+const app = createApp(App)
+app.use(hljsVuePlugin)
+app.mount('#app')
 ```
 
 Note: The plugin imports `highlight.js/lib/core` internally (but no languages).  Thanks to the magic of ES6 modules you can import Highlight.js anywhere to register languages or configure the library.  Any import of Highlight.js refers to the same singleton instance of the library, so configuring the library anywhere configures it everywhere.
@@ -52,8 +54,11 @@ You can also simply load all "common" languages at once (as of v11):
 
 ```js
 import hljs from 'highlight.js/lib/common';
-import vuePlugin from "@highlightjs/vue-plugin";
-Vue.use(vuePlugin);
+import hljsVuePlugin from "@highlightjs/vue-plugin";
+
+const app = createApp(App)
+app.use(hljsVuePlugin)
+app.mount('#app')
 ```
 
 ## Building the pre-built library from source
