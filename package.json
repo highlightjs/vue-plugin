@@ -4,7 +4,7 @@
   "description": "Highlight.js Vue Plugin",
   "main": "dist/highlightjs-vue.min.js",
   "module": "dist/highlightjs-vue.esm.min.js",
-  "types": "dist/highlightjs-vue.d.ts",
+  "types": "dist/vue.d.ts",
   "scripts": {
     "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1",
