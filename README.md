@@ -67,6 +67,28 @@ app.use(hljsVuePlugin)
 app.mount('#app')
 ```
 
+## Using component locally
+
+```vue
+<template>
+    <highlightjs
+        language="js"
+        code="console.log('Hello World');"
+    />
+</template>
+
+<script>
+import hljs from 'highlight.js/lib/common';
+import hljsVuePlugin from "@highlightjs/vue-plugin";
+
+export default {
+    components: {
+        highlightjs: hljsVuePlugin.component
+    }
+}
+</script>
+```
+
 ## Building the pre-built library from source
 
 We use rollup to build the `dist` distributable.
