@@ -73,10 +73,11 @@ const component = defineComponent({
     },
 })
 
-const plugin: Plugin = {
+const plugin: Plugin & { component: typeof component } = {
     install(app) {
         app.component('highlightjs', component)
     },
+    component,
 }
 
 export default plugin

@@ -8,10 +8,6 @@
         "allowSyntheticDefaultImports": true,
 
         "outDir": "dist",
-
-        "paths": {
-            "highlight.js/lib/core": ["./node_modules/highlight.js/types/index.d.ts"],
-        }
     },
     "exclude": [
         "node_modules",
