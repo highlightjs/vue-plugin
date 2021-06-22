@@ -5,7 +5,8 @@ export default {
   input: 'src/vue.ts',
   plugins: [typescript(), terser()],
   external: [
-    "highlight.js"
+    "highlight.js/lib/core",
+    "vue"
   ],
   output: [
     {

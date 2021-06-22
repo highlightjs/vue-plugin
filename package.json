@@ -1,6 +1,6 @@
 {
   "name": "@highlightjs/vue-plugin",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Highlight.js Vue Plugin",
   "main": "dist/highlightjs-vue.min.js",
   "module": "dist/highlightjs-vue.esm.min.js",
