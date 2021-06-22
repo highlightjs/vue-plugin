@@ -1,3 +1,8 @@
+## 2.0.1
+
+- Export `component` also
+- Fix name of types file
+
 ## 2.0.0
 
 - Vue 3.x support
