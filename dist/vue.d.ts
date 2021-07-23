@@ -20,6 +20,11 @@ declare const component: import("vue").DefineComponent<{
     className: import("vue").ComputedRef<string>;
     highlightedCode: import("vue").ComputedRef<string>;
 }, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, Record<string, any>, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<{
+    code?: unknown;
+    language?: unknown;
+    autodetect?: unknown;
+    ignoreIllegals?: unknown;
+} & {
     code: string;
     language: string;
     autodetect: boolean;
@@ -31,6 +36,7 @@ declare const component: import("vue").DefineComponent<{
 }>;
 declare const plugin: Plugin & {
     component: typeof component;
+    HLJS_INSTANCE_KEY: Symbol;
 };
 export default plugin;
 //# sourceMappingURL=vue.d.ts.map
