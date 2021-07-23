@@ -1,6 +1,8 @@
-import { ref, h, computed, defineComponent, Plugin, watch } from 'vue'
-import hljs from 'highlight.js/lib/core'
+import { ref, h, computed, defineComponent, Plugin, watch, inject } from 'vue'
+import packagedHljs from 'highlight.js/lib/core'
 import { escapeHtml } from './lib/utils'
+
+const HLJS_INSTANCE_KEY = Symbol('__HLJS_INSTANCE_KEY__')
 
 const component = defineComponent({
     props: {
@@ -21,7 +23,10 @@ const component = defineComponent({
             default: true,
         },
     },
+
     setup(props) {
+        const hljs = inject<typeof packagedHljs>(HLJS_INSTANCE_KEY) ?? packagedHljs
+
         const language = ref(props.language)
         watch(() => props.language, (newLanguage) => {
             language.value = newLanguage
@@ -63,6 +68,7 @@ const component = defineComponent({
             highlightedCode,
         }
     },
+
     render() {
         return h('pre', {}, [
             h('code', {
@@ -73,10 +79,11 @@ const component = defineComponent({
     },
 })
 
-const plugin: Plugin & { component: typeof component } = {
+const plugin: Plugin & { component: typeof component; HLJS_INSTANCE_KEY: Symbol } = {
     install(app) {
         app.component('highlightjs', component)
     },
+    HLJS_INSTANCE_KEY,
     component,
 }
 

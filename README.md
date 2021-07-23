@@ -89,6 +89,36 @@ export default {
 </script>
 ```
 
+## Injecting another instance of highlight.js
+
+If you are using a different version of `highlight.js` package than this package, you may end up with two different instances of the `hljs` singleton. You can explicitly inject your instance of `hljs` into this plugin as follows:
+
+```vue
+<script lang="ts">
+import { defineComponent, provide } from 'vue'
+import hljsPlugin from '@highlightjs/vue-plugin'
+import hljs from 'highlight.js'
+
+export default defineComponent({
+    setup() {
+        provide(hljsPlugin.HLJS_INSTANCE_KEY, hljs)
+    },
+})
+</script>
+```
+
+If you are getting a `inject() can only be used inside setup() or functional components.` warning, it means that your app and this plugin are resolving to different versions of `vue`. If you are using webpack, you can force it to where to resolve `vue` in your configuration file:
+
+```ts
+export default {
+    resolve: {
+        alias: {
+            vue: path.resolve('node_modules/vue'),
+        },
+    },
+}
+```
+
 ## Building the pre-built library from source
 
 We use rollup to build the `dist` distributable.
