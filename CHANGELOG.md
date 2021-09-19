@@ -1,3 +1,8 @@
+## 2.1.0
+
+- `vue` and `highlight.js` moved to `peerDependencies` (#17)
+- no other changes
+
 ## 2.0.1
 
 - Export `component` also
