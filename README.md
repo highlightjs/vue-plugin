@@ -59,13 +59,15 @@ Note: The plugin imports `highlight.js/lib/core` internally (but no languages). 
 You can also simply load all "common" languages at once (as of v11):
 
 ```js
-import hljs from 'highlight.js/lib/common';
+import 'highlight.js/lib/common';
 import hljsVuePlugin from "@highlightjs/vue-plugin";
 
 const app = createApp(App)
 app.use(hljsVuePlugin)
 app.mount('#app')
 ```
+
+Note that the `highlight.js/lib/common` import does not import the `hljs` object because it registers common languages internally and modern web bundlers like `webpack` will optimize out unused imported names. If you want to customize the `hljs` object, you can import it like the [previous example](#using-es6-modules--bundling).
 
 ## Using component locally
 
@@ -78,7 +80,7 @@ app.mount('#app')
 </template>
 
 <script>
-import hljs from 'highlight.js/lib/common';
+import 'highlight.js/lib/common';
 import hljsVuePlugin from "@highlightjs/vue-plugin";
 
 export default {
