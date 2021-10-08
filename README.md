@@ -43,6 +43,7 @@ app.use(hljsVuePlugin)
 ## Using ES6 modules / bundling
 
 ```js
+import 'highlight.js/styles/stackoverflow-light.css'
 import hljs from 'highlight.js/lib/core';
 import javascript from 'highlight.js/lib/languages/javascript';
 import hljsVuePlugin from "@highlightjs/vue-plugin";
@@ -59,6 +60,7 @@ Note: The plugin imports `highlight.js/lib/core` internally (but no languages). 
 You can also simply load all "common" languages at once (as of v11):
 
 ```js
+import 'highlight.js/styles/stackoverflow-light.css'
 import 'highlight.js/lib/common';
 import hljsVuePlugin from "@highlightjs/vue-plugin";
 
