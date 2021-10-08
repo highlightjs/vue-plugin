@@ -93,6 +93,9 @@ export default {
 </script>
 ```
 
+Note: You can find a comprehensive list of the available themes [here](https://github.com/highlightjs/highlight.js/tree/main/src/styles)
+
+
 ## Building the pre-built library from source
 
 We use rollup to build the `dist` distributable.
