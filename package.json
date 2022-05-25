@@ -10,6 +10,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "publish": "npm publish --access public --tag next"
   },
+  "exports": {
+    ".": {
+      "require": "./dist/highlightjs-vue.min.js",
+      "import": "./dist/highlightjs-vue.esm.min.js",
+      "types": "./dist/vue.d.ts"
+    }
+  },
   "type": "module",
   "author": "Josh Goebel <hello@joshgoebel.com>",
   "license": "BSD-3-Clause",
