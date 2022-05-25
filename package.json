@@ -15,8 +15,7 @@
       "require": "./dist/highlightjs-vue.min.js",
       "import": "./dist/highlightjs-vue.esm.min.js",
       "types": "./dist/vue.d.ts"
-    },
-    "./*": "./*"
+    }
   },
   "type": "module",
   "author": "Josh Goebel <hello@joshgoebel.com>",
