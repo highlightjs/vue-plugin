@@ -1,3 +1,7 @@
+## 2.1.1
+
+- add `exports "."` to `package.json` (#27)
+
 ## 2.1.0
 
 - `vue` and `highlight.js` moved to `peerDependencies` (#17)
