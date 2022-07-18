@@ -22,7 +22,7 @@ This plugin provides a `highlightjs` component for use in your Vue.js 3 applicat
 </div>
 ```
 
-Note: For Vue.js version 2 support see the [1-stable](https://github.com/highlightjs/vue-plugin/tree/1-stable) branch here on GitHub.  The `latest` tag via NPM is compatible with Vue.js v2; the `next` tag Vue.js v3.
+Note: For Vue.js version 2 support see the [1-stable](https://github.com/highlightjs/vue-plugin/tree/1-stable) branch here on GitHub.  Version 1.x.x is compatible with Vue.js v2; version 2.x.x with Vue.js v3.
 
 ## Using the pre-built libraries
 
