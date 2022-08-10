@@ -68,6 +68,7 @@ const component = defineComponent({
             h('code', {
                 class: this.className,
                 innerHTML: this.highlightedCode,
+                tabindex: '0',
             }),
         ])
     },
