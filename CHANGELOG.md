@@ -1,3 +1,7 @@
+## 2.1.2
+
+- Default to `tabindex="0"` on the internal `<code>` element to allow keyboard scrolling when a scrollbar is applied to the element. This resolves an accessibility issue found by Vue-Axe. (#33)
+
 ## 2.1.1
 
 - add `exports "."` to `package.json` (#27)
