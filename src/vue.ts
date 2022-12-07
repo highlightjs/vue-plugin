@@ -27,7 +27,7 @@ const component = defineComponent({
             language.value = newLanguage
         })
 
-        const autodetect = computed(() => props.autodetect || !language.value)
+        const autodetect = computed(() => props.autodetect && !language.value)
         const cannotDetectLanguage = computed(() => !autodetect.value && !hljs.getLanguage(language.value))
 
         const className = computed((): string => {
