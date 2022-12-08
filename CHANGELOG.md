@@ -1,3 +1,7 @@
+## 2.1.3
+
+- Fix `language` prop being ignored unless `autodetect` is explicitly set to `false` (#41)
+
 ## 2.1.2
 
 - Default to `tabindex="0"` on the internal `<code>` element to allow keyboard scrolling when a scrollbar is applied to the element. This resolves an accessibility issue found by Vue-Axe. (#33)
