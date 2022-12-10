@@ -1,4 +1,4 @@
-import { ref, h, computed, defineComponent, Plugin, watch } from 'vue'
+import { ref, h, computed, defineComponent, type Plugin, watch } from 'vue'
 import hljs from 'highlight.js/lib/core'
 import { escapeHtml } from './lib/utils'
 
