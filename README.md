@@ -24,6 +24,19 @@ This plugin provides a `highlightjs` component for use in your Vue.js 3 applicat
 
 Note: For Vue.js version 2 support see the [1-stable](https://github.com/highlightjs/vue-plugin/tree/1-stable) branch here on GitHub.  Version 1.x.x is compatible with Vue.js v2; version 2.x.x with Vue.js v3.
 
+## Using script setup
+
+```html
+<template>
+    <highlight-js autodetect code="function() {}" />
+</template>
+
+<script setup>
+import 'highlight.js/lib/common';
+import { HighlightJs } from "@highlightjs/vue-plugin";
+</script>
+```
+
 ## Using the pre-built libraries
 
 ```html
