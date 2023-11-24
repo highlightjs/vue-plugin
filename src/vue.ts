@@ -1,6 +1,9 @@
-import { ref, h, computed, defineComponent, Plugin, watch } from 'vue'
+import { ref, h, computed, defineComponent, Plugin, watch, markRaw } from 'vue'
 import hljs from 'highlight.js/lib/core'
 import { escapeHtml } from './lib/utils'
+
+// Ensure that it will never be converted to a proxy
+markRaw(hljs)
 
 const component = defineComponent({
     props: {
