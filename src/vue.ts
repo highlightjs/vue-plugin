@@ -82,3 +82,5 @@ const plugin: Plugin & { component: typeof component } = {
 }
 
 export default plugin
+
+export const HighlightJs = component
