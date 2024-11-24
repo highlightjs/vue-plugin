@@ -24,23 +24,15 @@ This plugin provides a `highlightjs` component for use in your Vue.js 3 applicat
 
 Note: For Vue.js version 2 support see the [1-stable](https://github.com/highlightjs/vue-plugin/tree/1-stable) branch here on GitHub.  Version 1.x.x is compatible with Vue.js v2; version 2.x.x with Vue.js v3.
 
-## Using the pre-built libraries
+## Installation
 
-```html
-<link rel="stylesheet" href="/path/to/styles/default.css">
-<script src="/path/to/highlight.min.js"></script>
-<script src="/path/to/highlight-vue.min.js"></script>
+```shell
+npm add @highlightjs/vue-plugin
 ```
-
-Then simply register the plugin with Vue:
-
-```js
-const app = createApp(App)
-app.use(hljsVuePlugin)
-```
-
 
 ## Using ES6 modules / bundling
+
+As a [Vue Plugin](https://vuejs.org/guide/reusability/plugins.html):
 
 ```js
 import 'highlight.js/styles/stackoverflow-light.css'
@@ -73,6 +65,8 @@ Note that the `highlight.js/lib/common` import does not import the `hljs` object
 
 ## Using component locally
 
+The component can also be imported locally.  However, you still have to import the css styles somewhere.
+
 ```vue
 <template>
     <highlightjs
@@ -91,6 +85,21 @@ export default {
     }
 }
 </script>
+```
+
+## Using the pre-built libraries
+
+```html
+<link rel="stylesheet" href="/path/to/styles/default.css">
+<script src="/path/to/highlight.min.js"></script>
+<script src="/path/to/highlight-vue.min.js"></script>
+```
+
+Then simply register the plugin with Vue:
+
+```js
+const app = createApp(App)
+app.use(hljsVuePlugin)
 ```
 
 ## Building the pre-built library from source
